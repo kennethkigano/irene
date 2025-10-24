@@ -24,6 +24,14 @@ import {
   PanelLeft
 } from "lucide-react";
 
+const localImages = {
+  hero: "/images/kenya-hero.jpg",
+  luxury: "/images/luxury-kenya.jpg", 
+  budget: "/images/budget-safari.jpg",
+  cultural: "/images/cultural-kenya.jpg",
+  safari: "/images/placeholder-safari.jpg"
+}
+
 export default function Home() {
   const { data: itineraries } = useQuery<Itinerary[]>({
     queryKey: ["/api/itineraries"]
@@ -79,7 +87,7 @@ export default function Home() {
               <Card className="overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-xl border-none shadow group">
                 <div className="h-52 bg-primary/10 relative overflow-hidden">
                   <img 
-                    src="/images/kenya-destination.jpg" 
+                    src={localImages.hero} 
                     alt="Kenya" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -753,4 +761,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+}   

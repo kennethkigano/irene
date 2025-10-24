@@ -32,19 +32,33 @@ export default function About() {
         <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-sm mb-16">
           <h2 className="text-3xl font-bold mb-6 text-center text-brand-navy">About <span className="text-brand-orange">Us</span> – SnowyTop Safaris Ltd</h2>
           <p className="text-lg mb-6">
-            SnowyTop Safaris Ltd is a premier community-based tourism company in Kenya, dedicated to sustainable, ethical, and regenerative travel across Africa. We're redefining what it means to go on safari—shifting away from mass tourism toward responsible travel that uplifts local communities, preserves the environment, and respects cultural heritage.
+            At 5 AM, the world is quiet.
+The sun whispers its first light across the horizon.
+It is in this stillness that greatness begins — clarity, courage, and purpose are born.
           </p>
           <p className="text-lg mb-6">
-            We believe tourism should be a force for good. That's why we design experiences that directly benefit local people—empowering them through employment, cultural exchange, and community-driven development. Our travelers go beyond sightseeing to engage meaningfully with the people and places they visit, forming real connections while leaving a positive footprint.
+            
+At Snowytop Safaris, we believe travel is more than movement across landscapes.
+It is an awakening — a rising into your truest, highest self.
+Just as the 5 AM Club teaches mastery of your mornings, our journeys are designed to help you master your life.
           </p>
           <p className="text-lg mb-6">
-            Our eco-tourism and conservation-focused safaris give guests the opportunity to actively support wildlife protection, including anti-poaching efforts and habitat preservation. By integrating eco-friendly practices into all aspects of our operations, we aim to reduce human-wildlife conflict and protect Kenya's rich biodiversity for future generations.
+           Every safari is a call to step out of the cocoon of comfort.
+Every mountain trail, every savannah sunrise, every cultural exchange is a chance to transform.
+To leave behind limits and step into the extraordinary.
           </p>
           <p className="text-lg mb-6">
-            We partner with grassroots organizations such as Binti Mwangaza, Imara Rescue Centre, and Daraja Academy, investing 10% of our proceeds back into community projects focused on education, conservation, and empowerment. We also support local guides, artisans, and eco-lodges, ensuring that tourism dollars stay within the communities we serve.
+            
+We exist for those who dare to live beyond the ordinary.
+For the dreamers ready to awaken discipline.
+For the explorers who know adventure is the ultimate classroom.
+For the seekers who believe that life, like the dawn, always offers a new beginning.
           </p>
           <p className="text-lg mb-6">
-            Our programs include volunteer placements, cultural immersions, homestays, and hands-on conservation activities. Whether you're helping in a community garden, joining a cultural celebration, or shadowing anti-poaching rangers, you'll be part of something meaningful.
+           This is not just travel.
+This is the art of becoming.
+This is Snowytop Safaris.
+Travel with Purpose. Explore with Heart.
           </p>
           <p className="text-lg mb-6">
             We collaborate with trusted industry partners and are proudly listed on travel platforms such as <a href="https://www.safaribookings.com/" target="_blank" rel="noopener noreferrer" className="text-brand-orange hover:underline">SafariBookings.com</a>, where you can learn more about our tours, accommodations, and values.

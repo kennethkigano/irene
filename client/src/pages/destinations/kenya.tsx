@@ -8,6 +8,14 @@ import { Clock, MapPin, Star } from "lucide-react";
 import { formatRating, formatDuration } from "@/lib/format-utils";
 import { DestinationHero } from "@/components/destination-hero";
 
+const localImages = {
+  hero: "/images/kenya-hero.jpg",
+  luxury: "/images/luxury-kenya.jpg", 
+  budget: "/images/budget-safari.jpg",
+  cultural: "/images/cultural-kenya.jpg",
+  safari: "/images/placeholder-safari.jpg"
+}
+
 const KenyaDestination = () => {
   const { data: itineraries, isLoading } = useQuery<Itinerary[]>({
     queryKey: ["/api/itineraries", { country: "Kenya" }]
@@ -18,8 +26,8 @@ const KenyaDestination = () => {
       <DestinationHero
         title="Discover Kenya"
         description="Experience the magic of Kenya - from the iconic Masai Mara to pristine beaches, rich cultures, and extraordinary wildlife encounters."
-        imageSrc="/images/kenya-hero.jpg"
-        imageAlt="Kenya Safari"
+        imageSrc={localImages.hero}
+        imageAlt="Kenya Safari Landscape"
       />
 
       {/* Main Content */}
@@ -116,16 +124,16 @@ const KenyaDestination = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {itineraries?.filter(it => it.country === "Kenya")
-              .slice(0, 3)
-              .map((itinerary) => (
-                <Card key={itinerary.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={itinerary.imageUrl || "/images/placeholder-safari.jpg"}
-                      alt={itinerary.title}
-                      className="w-full h-full object-cover transition-transform hover:scale-105"
-                    />
-                  </div>
+        .slice(0, 3)
+        .map((itinerary) => (
+          <Card key={itinerary.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+            <div className="relative h-48 overflow-hidden">
+              <img
+                src={itinerary.imageUrl || localImages.safari}  // Updated here
+                alt={itinerary.title}
+                className="w-full h-full object-cover transition-transform hover:scale-105"
+              />
+            </div>
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-xl">{itinerary.title}</CardTitle>
@@ -172,7 +180,7 @@ const KenyaDestination = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="group relative h-72 rounded-xl overflow-hidden">
             <img 
-              src="/images/luxury-kenya.jpg" 
+               src={localImages.luxury} 
               alt="Luxury Kenya Packages" 
               className="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
@@ -194,7 +202,7 @@ const KenyaDestination = () => {
           
           <div className="group relative h-72 rounded-xl overflow-hidden">
             <img 
-              src="/images/budget-safari.jpg" 
+              src={localImages.budget} 
               alt="Budget-Friendly Kenya Packages" 
               className="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
@@ -216,7 +224,7 @@ const KenyaDestination = () => {
           
           <div className="group relative h-72 rounded-xl overflow-hidden">
             <img 
-              src="/images/cultural-kenya.jpg" 
+               src={localImages.cultural}
               alt="Cultural & Community Kenya Packages" 
               className="w-full h-full object-cover transition-transform group-hover:scale-105"
             />
@@ -265,4 +273,4 @@ const KenyaDestination = () => {
   );
 };
 
-export default KenyaDestination;
+export default KenyaDestination;   

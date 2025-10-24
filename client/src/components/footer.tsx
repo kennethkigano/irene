@@ -114,8 +114,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-brand-orange shrink-0 mt-0.5" />
                 <div className="flex flex-col">
-                  <span className="text-white/80">reservations@snowytopsafari.com</span>
-                  <span className="text-white/80">sales@snowytopsafari.com</span>
+                  <span className="text-white/80">reservations@snowytopsafari.co.ke</span>
+                  <span className="text-white/80">sales@snowytopsafari.co.ke</span>
                 </div>
               </li>
               <li className="flex items-start">
