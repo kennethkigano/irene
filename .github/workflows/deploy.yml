@@ -37,7 +37,7 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "kiki-snowytopsaf-16"
+          project: "snowytop"
           entrypoint: "index.js"
           root: "dist"
           
